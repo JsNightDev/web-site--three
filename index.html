@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+  <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+
+      function validateFormFirst() {
+        let x = document.forms["first__Form"]["fname"].value;
+        if (x == "") {
+      document.getElementById("first").style.borderColor = "red";
+      return false;
+  }
+}
+      function validateFormSecond() {
+        let y = document.forms["second__Form"]["fname"].value;
+        if (y == "") {
+      document.getElementById("second").style.borderColor = "red";
+      return false;
+  }
+}
+      function validateFormThird() {
+        let y = document.forms["Third__Form"]["fname"].value;
+        if (y == "") {
+      document.getElementById("Third").style.borderColor = "red";
+      return false;
+  }
+}
+      function validateFormFourth() {
+        let z = document.forms["Fourth__Form"]["fname"].value;
+        if (z == "") {
+      document.getElementById("Fourth").style.borderColor = "red";
+      return false;
+  }
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+window.onload = () => {
+  for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    console.log(panel)
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+}
+
+
+  </script>
+<body class="bg">
+
+    <!-- the "MAIN" tag has used to the background images has applying one more sections -->
+
+    <main class="main w-screen relative z-0">
+
+      <!-- background images -->
+
+          <img  class="opacity-10 md:placeholder-opacity-50 absolute right-0 w-[360.58px] " src="./styles/background__image/bigVector.svg" alt="">
+          <img  class="hidden lg:inline absolute md:left-[40px] lg:left-[88.80px] xl:left-[171.83px] z-[-9] md:z-[99] lg:z-[-9]" src="./styles/background__image/1stPolygon_4.svg" alt="">
+          <img  class="hidden md:inline lg:hidden absolute left-[93px] z-[99]" 
+          src="./styles/background__image/tab-top-1st__poligon.svg" alt="">
+
+          <img  class="hidden md:inline absolute top-[572px]" src="./styles/background__image/2ndPolygon 1.svg" alt="">
+          <img  class="hidden opacity-[50%] xl:inline absolute top-[221px] left-[81px]" src="./styles/background__image/yellowEllipse 2.svg" alt="">
+          <img class="hidden lg:inline absolute right-0 top-[1217.72px] z-[-9]" src="./styles/background__image/lap-right-bottom-polygon.svg" alt="">
+          <img class="hidden md:inline absolute lg:hidden right-0 top-[707.72px] z-[-9]" src="./styles/background__image/tablet-right-bottom-polygon.svg" alt="">
+          <img class="hidden md:inline lg:hidden absolute left-0 bottom-[-136px] z-[-99]" src="./styles/background__image/tab-validation-bg.svg" alt="">
+
+<!-- header section -->
+    <!-- only for large devices -->
+
+      <header class="container mx-auto px-10  pt-9 hidden lg:flex justify-between items-center z-10 text-lg font-medium">
+
+        <div class="flex justify-between gap-32 font-inter">
+
+                <img class="bg-white pr-8 w-[274px] h-[48px] 
+                border-gray-100 cursor-pointer" src="./styles/logo/logo-main.svg" alt="logo">
+
+                <div class="flex items-center gap-9">
+                    <div class="parent">
+                      <a href="#" class="font-roboto text-[#333333] hover:text-[#107EC3]">Our Platfrom</a>
+                        <div class="parent__hover">
+                            <div class="underline hover__one"></div>
+                            <div class="underline hover__two"></div>
+                            <div style="height: 2px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                      <a href="#" class="font-roboto text-[#333333] hover:text-[#107EC3]">Pricing</a>
+                        <div class="parent__hover">
+                            <div class="underline hover__one"></div>
+                            <div class="underline hover__two"></div>
+                            <div style="height: 2px;"></div>
+                        </div>
+                    </div>
+                </div>   
+
+        </div>
+                      
+        <div class="lg:flex justify-between items-center">
+
+            <div class="parent font-inter pr-9 z-[99]">
+              <a href="#" class="font-roboto text-[#333333] hover:text-[#107EC3]">Talk to Sales</a>
+                <div class="parent__hover">
+                    <div class="underline hover__one"></div>
+                    <div class="underline hover__two"></div>
+                    <div style="height: 2px;"></div>
+                </div>
+            </div>
+
+            <div class="parent font-inter pr-11 z-[99]">
+              <a href="#" class="font-roboto text-[#333333] hover:text-[#107EC3]">Login</a>
+                <div class="parent__hover">
+                    <div class="underline hover__one"></div>
+                    <div class="underline hover__two"></div>
+                    <div style="height: 2px;"></div>
+                </div>
+            </div>
+
+            <div class="flex cursor-pointer z-[99]">
+                <button class="border border-[#3E9FE3] border-solid rounded-lg text-base font-medium text-[#3E9FE3] px-4 py-3 md:px-6">Sign Up</button>
+            </div>
+            
+        </div>
+   
+      </header>
+
+    <!-- except large devices -->
+
+      <header class="container mx-auto px-10 pt-[25px] lg:hidden">
+
+          <div class="flex w-full justify-between items-center">
+              <div class="flex items-center z-40 gap-2">
+                <button class="relative md:pr-4 border-gray-100" onclick="w3_open()">
+                  <img src="./styles/logo/option__button.svg" alt="option"> 
+                </button>
+                  <img class="w-[156px] h-[27px] " src="./styles/logo/logo-main.svg" alt="">
+              </div>    
+
+              <button class=" border border-[#3E9FE3] border-solid rounded-lg text-xs font-inter font-medium 
+                            text-[#3E9FE3] py-[5px] px-[4px] md:py-[10px] md:px-6 z-40">Sign Up
+              </button>
+          </div>   
+
+          <div class="flex justify-center top-[25px] flex-col z-[99] bg-[#d6efff] rounded-md 
+                     w-full h-fit p-3 transition-all duration-75 ease-in " style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="text-[#104cc3] text-xs font-bold cursor-pointer">Cancel</button><br>
+            <a href="#" class="font-roboto text-[#333333] text-sm font-medium hover:text-[#107EC3]">Our Platform</a><br>
+            <a href="#" class="font-roboto text-[#333333] text-sm font-medium hover:text-[#107EC3]">Pricing</a><br>
+            <a href="#" class="font-roboto text-[#333333] text-sm font-medium hover:text-[#107EC3]">Talk to Sales</a><br>
+            <a href="#" class="font-roboto text-[#333333] text-sm font-medium hover:text-[#107EC3]">Login</a><br>
+          </div>
+
+      </header>
+
+<!-- first section -->
+
+      <section class="container mx-auto  px-10 pt-11 md:pt-[83px]">
+
+        <img class="hidden lg:block pb-[42px]" src="./styles/logo/smallVector.svg" alt="">
+        <h1 class="text-[40px] w-2/4 md:w-fit font-roboto font-bold md:text-[50px] lg:[56px]">Pricing Informtion</h1>
+        <h3 class="text-[22px] font-roboto font-medium pt-4  md:pt-5 md:pb-4 md:text-[22px] lg:[32px]">How it Works</h3>
+        <p class="text-[14px] font-roboto font-normal 
+        text-[#3D3D3D] opacity-95 lg:opacity-[100%] w-full md:w-4/5 lg:md\:w-3/4 md:text-[16px] lg:[24px]">The price is per home built and we will support the platform per user until the warranty home period expires. For example if it takes you 10 months to build a brand new home and you offer a 3-year warranty:  you and your customer will have access to the system  for 4 years. One year for the construction of the home plus three years for the warranty period.</p>
+
+      </section>
+
+<!-- second section -->
+
+      <section class="container mx-auto w-full px-10 pt-[18px] md:pt-24 lg:pt-28">
+
+        <h2 class="font-medium text-[23px] md:text-[36px] text-[#091133] font-roboto text-center">VOLUME DISCOUNTS</h2>
+        
+        <div class="mx-auto w-fit pt-[18px] pb-[14px] md:pb-[16px] md-[21px]">
+
+          <ul class="flex justify-evenly items-center text-center h-[44px] w-[240px] md:w-[444px] border border-solid
+           border-[#D7DCF0] rounded-3xl cursor-pointer text-[12px] md:text-[16px] font-bold font-roboto md:pt-0">
+
+              <li class="hover:text-white hover:bg-[#3E9FE3] rounded-3xl hover:shadow-[0px 5px 7px] 
+              hover:shadow-[#5243c2] hover:shadow-[0px 5px 7px] w-[78px] h-[44px] p-[8px]"> <25 </li> 
+              <li class="hover:text-white hover:bg-[#3E9FE3] rounded-3xl hover:shadow-[0px 5px 7px] 
+              hover:shadow-[#5243c2] w-[78px] h-[44px] p-[8px]"> 26-100 </li> 
+              <li class="hover:text-white hover:bg-[#3E9FE3] rounded-3xl hover:shadow-[0px 5px 7px] 
+              hover:shadow-[#5243c2] w-[85px] h-[44px] p-[8px]"> 101-250 </li>  
+              <li class="hover:text-white hover:bg-[#3E9FE3] rounded-3xl hover:shadow-[0px 5px 7px] 
+              hover:shadow-[#5243c2] w-[78px] h-[44px] p-[8px]"> 251+ </li>
+
+          </ul>
+
+        </div>
+        <div class="text-center">
+            <span class="text-[22px] font-roboto font-normal text-[#3D3D3D]">Home Built Per Year</span>
+        </div>
+
+      </section>
+
+<!-- Third section -->
+
+      <!-- <section class="container w-fit mx-auto px-10 mt-[72px] flex justify-center items-center flex-col 
+                      md:flex-row gap-[50px] border border-l-rose-500">
+
+        <div class="bg-[#ffffff] group hover:bg-[#3E9FE3] cursor-pointer select-none hover:text-[#FFFFFF] w-[300px] h-[710px] p-[31px] border border-gray-100 rounded-[26px] relative">
+
+           <button class="bg-[#FFA900] group-hover:bg-[#006CB8]  bg-opacity-10 text-[#FFA900] text-[12px] font-roboto font-bold 
+                w-[106px] h-[27px] rounded-[13.5px] group-hover:text-white">Professional</button>
+            <h3 class="font-roboto font-bold text-[36px] pt-[18px]">$299
+              <span class="font-medium text-[17px] text-[#848199] group-hover:text-white ">/home</span>
+            </h3>
+            <h4 class="text-[#3E9FE3] text-[17px] font-medium font-roboto  group-hover:text-white ">Unlimitted Users</h4>
+            <h3 class="text-[#231D4F] group-hover:text-white  text-xl font-bold font-roboto pt-[20px] pb-[21px] 
+            w-2/4">Features & Integrations</h3>
+            
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white group-hover:bg-[#fffff] bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Construction Grant Chart</h2>
+            </div>
+
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Texting Capabilities</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199]  group-hover:text-white  text-[15px] font-medium font-roboto">Files & Photo Sharing</h2>
+            </div>
+            <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199]  group-hover:text-white  text-[15px] font-medium font-roboto">Calender & Meeting Scheduling</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Task Management</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Branded App</h2>
+            </div>
+            <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Document Sign</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Excel</h2>
+            </div>
+
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                <img src="./styles/logo/redtick.svg" alt="tick">
+              </div>  
+                <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Texting Capabilities</h2>
+            </div>
+
+            <button class="w-[231px] px-[69px] h-[45px] bg-[#3E9FE326] group-hover:bg-white bg-opacity-[13%] rounded-[8px] text-[15px]
+            font-black font-inter text-[#3E9FE3]  mt-11 mb-16">Sign Up</button>
+
+            <img class="absolute top-[15px] right-[-25px]" src="./styles/background__image/polygon__group__mesh.svg" alt="">
+
+        </div>
+
+         <div class="bg-[#ffffff] group hover:bg-[#3E9FE3] cursor-pointer select-none hover:text-[#FFFFFF] w-[300px] h-[710px] p-[31px] border border-gray-100 rounded-[26px] relative">
+
+           <button class="bg-[#FFA900] group-hover:bg-[#006CB8]  bg-opacity-10 text-[#FFA900] text-[12px] font-roboto font-bold 
+                w-[106px] h-[27px] rounded-[13.5px] group-hover:text-white">Premium</button>
+            <h3 class="font-roboto font-bold text-[36px] pt-[18px]">$399
+              <span class="font-medium text-[17px] text-[#848199] group-hover:text-white ">/home</span>
+            </h3>
+            <h4 class="text-[#3E9FE3] text-[17px] font-medium font-roboto  group-hover:text-white ">Unlimitted Users</h4>
+            <h3 class="text-[#231D4F] group-hover:text-white  text-xl font-bold font-roboto pt-[20px] pb-[21px] 
+            w-2/4">Features & Integrations</h3>
+            
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white group-hover:bg-[#fffff] bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Construction Grant Chart</h2>
+            </div>
+
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Texting Capabilities</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199]  group-hover:text-white  text-[15px] font-medium font-roboto">Files & Photo Sharing</h2>
+            </div>
+            <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199]  group-hover:text-white  text-[15px] font-medium font-roboto">Calender & Meeting Scheduling</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Task Management</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Branded App</h2>
+            </div>
+            <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Document Sign</h2>
+            </div>
+              <div class="flex gap-2 pb-[13px]">
+                <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                  <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>
+              <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Excel</h2>
+            </div>
+
+            <div class="flex gap-2 pb-[13px]">
+              <div class="w-5 h-5 rounded-full bg-[#5243C2] group-hover:bg-white bg-opacity-[10.37%] flex justify-center items-center">
+                <img src="./styles/logo/bluetick.svg" alt="tick">
+              </div>  
+                <h2 class="text-[#848199] group-hover:text-white  text-[15px] font-medium font-roboto">Texting Capabilities</h2>
+            </div>
+
+            <button class="w-[231px] px-[69px] h-[45px] bg-[#3E9FE326] group-hover:bg-white bg-opacity-[13%] rounded-[8px] text-[15px]
+            font-black font-inter text-[#3E9FE3]  mt-11 mb-16">Sign Up</button>
+
+            <img class="absolute top-[15px] right-[-25px]" src="./styles/background__image/polygon__group__mesh.svg" alt="">            
+
+        </div>
+
+      </section> -->
+
+<!-- fourth section -->
+
+    <section class="container px-10 mx-auto text-center mt-20 bg-white w-[86%] h-fit lg:flex 
+                    lg:justify-center lg:items-center border border-gray-100">
+
+      <div class="pt-12 lg:pb-12 lg:w-[50%]">
+        <h2 class="text-[#6F7CB2] text-[18px] font-medium font-roboto">Work on Commercial Projects?</h2>
+        <h2 class="text-[26px] md:text-[36px] font-[500] font-roboto">Call or Email Us For Pricing <br>
+        <span class="mb-[64px]">1-844-814-4627</span></h2>
+      </div>
+
+      <form id="first"  name="first__Form" onsubmit="return validateFormFirst()" method="post"
+      class="flex justify-between items-center w-[194px] md:w-[445px] h-[45px] md:h-[60px] px-[1.5px] py-[1px] 
+      border mt-6 mb-12 lg:m-auto border-[#3391D3] rounded-[8px] m-auto">
+
+        <input name="fname" type="email" class="plce-hlder w-[122px] md:w-[145px] outline-none h-[24px] 
+        pl-[2px] font-Roboto font-normal text-[14px]" placeholder="E.g.ziggy@space.com">
+
+        <button type="submit" value="Submit" class="w-[67px] md:w-[200px] h-[39px] md:h-[48px]
+          text-[10px] md:text-[15px] text-white rounded-[4px] bg-[#3391D3]">Pricing Information</button>
+
+      </form>
+
+    </section>
+
+</main>
+  <!-- footer section -->
+ <footer class="bg-footer w-full h-fit mt-28 rounded-t-[30px]">
+  <div class="container mx-auto px-10">
+
+      <div class="pt-[30px] flex justify-center items-start md:items-center 
+          flex-col md:justify-between text-white">
+
+          <div class="md:hidden flex justify-center flex-col w-full">
+              <h3 class="text-[28px] font-roboto font-bold">Try it for 14 Days</h3>
+                <a class="text-[18px] font-inter font-bold pt-6 pb-2" href="#">E-mail</a>
+              
+                <form id="second" name="second__Form" class="border border-[#ffffff] bg-white w-full h-[45px] md:w-80 
+                        md:h-11 flex justify-between rounded-lg pl-3 pr-[1.5px]" onsubmit="return validateFormSecond()" method="post">
+
+                    <input type="email" name="fname" class="plce-hlder w-1/2 rounded" placeholder="E.g.ziggy@space.com">
+
+                    <button value="Submit" type="submit" class="bg-[#3391D3] w-fit border border-[#3391D3] rounded text-white text-sm px-6">Sign Up</button>
+
+                </form>
+
+                <span class="font-normal text-sm font-roboto pt-1">No credit card needed</span>  
+          </div>
+
+          <div class="lg:hidden md:-order-2 flex justify-between gap-2 flex-col md:flex-row pt-5 w-full">
+
+              <div class="flex justify-start flex-col w-full md:w-fit leading-6 border-b md:border-none 
+                  border-b-[#A3CFEE] py-5">
+                  <div class="accordion flex justify-between items-center"> 
+                    <h3 class="text-[18px] font-roboto font-bold md:pb-5">Why NextPort?</h3>
+                    <img class="w-2 h-2 md:hidden" src="./styles/logo/accordian.svg" alt="">
+                  </div> 
+                  <div class="panel hidden md:block w-36 pt-5 md:pb-0">
+                    <a class="leading-4" href="#">Our Innovative Solution</a>
+                    <a class="leading-4" href="#">Improve Customer Experience</a>
+                    <a class="leading-4" href="#">Enhance Productivity</a>
+                  </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-full md:w-[15%] leading-6 border-b md:border-none 
+                  border-b-[#A3CFEE] py-5">
+                <div class="accordion flex justify-between items-center"> 
+                  <h3 class="text-[18px] font-roboto font-bold pb-5">Product</h3>
+                  <img class="w-2 h-2 md:hidden" src="./styles/logo/accordian.svg" alt="">
+                </div>  
+                <div class="panel hidden md:block w-36 pt-5 md:pb-0">
+                    <a class="leading-4" href="#">Features</a>
+                </div>
+
+              </div>
+
+              <div class="flex justify-start flex-col w-full md:w-fit leading-6 border-b md:border-none border-b-[#A3CFEE] py-5">
+                  <div class="accordion flex justify-between items-center"> 
+                    <h3 class="text-[18px] font-roboto font-bold pb-5">Pricing</h3>
+                    <img class="w-2 h-2 md:hidden" src="./styles/logo/accordian.svg" alt="">
+                  </div>  
+                  <div class="panel hidden md:block w-36 pt-5 md:pb-0">
+                    <a class="leading-4" href="#">Plans</a>
+                    <a class="leading-4" href="#">14 Day Free Trial</a>
+                  </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-full md:w-fit leading-6 border-b md:border-none border-b-[#A3CFEE] py-5">
+              <div class="accordion flex justify-between items-center"> 
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Resources</h3>
+                <img class="w-2 h-2 md:hidden" src="./styles/logo/accordian.svg" alt="">
+              </div>  
+                <div class="panel hidden md:block w-36 pt-5 md:pb-0">
+                  <a class="leading-4" href="#">Download App</a>
+                  <a class="leading-4" href="#">Sales Support</a>
+                  <a class="leading-4" href="">Integrations & Partnerships</a>
+                </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-full md:w-fit leading-6 border-b md:border-none border-b-[#A3CFEE] py-5">
+              <div class="accordion flex justify-between items-center"> 
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Company</h3>
+                <img class="w-2 h-2 md:hidden" src="./styles/logo/accordian.svg" alt="">
+              </div>   
+                <div class="panel hidden md:block w-36 pt-5 md:pb-0">
+                  <a class="leading-4" href="#">About Us</a>
+                </div>  
+              </div>
+
+          </div>
+
+          <div class="md:hidden lg:block lg:justify-start lg:items-start lg:w-full social pt-7">
+              <h3 class="text-[18px] font-roboto font-bold">Follow Us</h3>
+            <div class="flex justify-center lg:justify-start gap-[25.5px] pt-[25px]">
+              <img src="./styles/social media icons/facebook.svg" alt="">
+              <img src="./styles/social media icons/linked__in.svg" alt="">
+              <img src="./styles/social media icons/twiter.svg" alt="">
+              <img src="./styles/social media icons/insta.svg" alt="">
+            </div>
+          </div>
+
+        <!-- tablet view -->
+          <div class="hidden md:flex lg:hidden gap-56">
+
+            <div class="social pt-3">
+                <h3 class="text-[18px] font-roboto font-bold">Follow Us</h3>
+              <div class="flex justify-start gap-[25.5px] pt-[25px]">
+                <img src="./styles/social media icons/facebook.svg" alt="">
+                <img src="./styles/social media icons/linked__in.svg" alt="">
+                <img src="./styles/social media icons/twiter.svg" alt="">
+                <img src="./styles/social media icons/insta.svg" alt="">
+            </div>
+            </div>
+
+            <div class="md:order-1 flex justify-center flex-col w-full">
+                <h3 class="text-[28px] font-roboto font-bold">Try it for 14 Days</h3>
+                  <a class="text-[18px] font-inter font-bold pt-6 pb-2" href="#">E-mail</a>
+                <form id="Third" name="Third__Form" class="border border-[#3391D3] bg-white w-full md:w-80 md:h-11 flex justify-between py-[5px] pl-2 pr-1 rounded-lg" onsubmit="return validateFormThird()" method="post">
+                  <input type="email" name="fname"  class="" placeholder="E.g.ziggy@space.com">
+                  <button value="Submit" type="submit" class="bg-[#3391D3] border border-[#3391D3] rounded text-white px-8 py-[14px]
+                  md:pt-[2px] md:pb-[7px]">Sign Up</button>
+                </form>
+                  <span class="font-normal text-sm font-roboto pt-1">No credit card needed</span>  
+            </div>
+
+          </div>
+        <!-- large devices -->
+
+          <div class="hidden lg:flex justify-between lg:-order-1 w-full">
+
+            <div class="hidden lg:flex md:-order-2 justify-center lg:justify-start flex-col md:flex-row w-full 
+             lg:w-[70%] pt-[8px]">
+
+              <div class="flex justify-start flex-col leading-6 w-full border-b md:border-none border-b-[#A3CFEE]">
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Why NextPort?</h3>
+                <div class="hidden md:block w-36 text-sm font-normal font-roboto">
+                  <a class="pb-[16px] cursor-pointer" href="#">Our Innovative Solution</a>
+                  <a class="pb-[16px] cursor-pointer" href="#">Improve Customer Experience</a>
+                  <a class="pb-[16px] cursor-pointer" href="#">Enhance Productivity</a>
+                </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-[15%] leading-6 border-b md:border-none border-b-[#A3CFEE]">
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Product</h3>
+                <div class="hidden md:block w-36 text-sm font-normal font-roboto">
+                    <a class="pb-[16px] cursor-pointer" href="#">Features</a>
+                </div>
+
+              </div>
+
+              <div class="flex justify-start flex-col leading-6 border-b md:border-none border-b-[#A3CFEE]">
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Pricing</h3>
+                <div class="hidden md:block w-36 text-sm font-normal font-roboto">
+                  <a class="pb-[16px] cursor-pointer" href="#">Plans</a><br>
+                  <a class="pb-[16px] cursor-pointer" href="#">14 Day Free Trial</a>
+                </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-full leading-6 border-b md:border-none border-b-[#A3CFEE]  pr-6">
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Resources</h3>
+                <div class="hidden md:block w-36 text-sm font-normal font-roboto">
+                  <a class="pb-[16px] cursor-pointer" href="#">Download App</a>
+                  <a class="pb-[16px] cursor-pointer" href="#">Sales Support</a>
+                  <a class="pb-[16px] cursor-pointer" href="">Integrations & Partnerships</a>
+                </div>  
+              </div>
+
+              <div class="flex justify-start flex-col w-full leading-6 border-b md:border-none border-b-[#A3CFEE]">
+                <h3 class="text-[18px] font-roboto font-bold pb-5">Company</h3>
+                <div class="hidden md:block w-36 text-sm font-normal font-roboto">
+                  <a class="pb-[16px] cursor-pointer" href="#">About Us</a>
+                </div>  
+              </div>
+
+            </div>
+
+            <div class="hidden lg:flex justify-center flex-col w-full lg:w-fit">
+              <h3 class="text-[28px] font-roboto font-bold">Try it for 14 Days</h3>
+                <a class="text-[18px] font-inter font-bold pt-6 pb-2" href="#">E-mail</a>
+
+              <form id="Fourth"  name="Fourth__Form" onsubmit="return validateFormFourth()"  
+                    class="border border-[#3391D3] bg-white w-full md:w-80 lg:w-72 md:h-11 flex justify-between lg:justify-center py-[5px] pl-2 pr-1 rounded-lg">
+                <input name="fname" type="email" class="" placeholder="E.g.ziggy@space.com">
+                <button type="submit" value="Submit"  class="bg-[#3391D3] border border-[#3391D3] rounded text-white px-4 py-[14px]
+                md:pt-[2px] md:pb-[7px]">Sign Up</button>
+              </form>
+
+                <span class="font-normal text-sm font-roboto pt-1">No credit card needed</span>  
+            </div>
+
+          </div>
+
+      </div> 
+
+    <hr class="mt-9">  
+
+      <div class="md:flex justify-between items-center md:pt-5 md:pb-5 text-[#FFFFFF]">
+
+        <div class="flex justify-between md:justify-center items-center text-sm font-roboto font-bold pt-5 md:pt-0">
+          <h5>Privacy Policy</h5>
+          <h5>Terms and Conditions</h5>
+          <h5>Support</h5>
+        </div>
+
+        <div class="flex justify-center items-center text-xs font-roboto font-normal pt-4 md:pt-0 pb-8 md:pb-0">
+          <h5>Copyright © 2021 NextPort.</h5>
+          <h5> All rights reserved.</h5>
+        </div>
+
+      </div> 
+
+  </div>
+</footer>
+
+  </body>
+</html> 
