@@ -1447,6 +1447,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:shadow-\[\#5243c2\]:hover {
   --tw-shadow-color: #5243c2;
   --tw-shadow: var(--tw-shadow-colored);
